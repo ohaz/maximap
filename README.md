@@ -1,5 +1,5 @@
 # maximap
-A tool to display the minimap of a game larger on a second screen
+A tool to display the minimap of a game larger on a second screen. Should work on all operating systems supported by `captrs` and `rust_minifb`, so Windows and Linux should work. I have not tested it on Linux yet though.
 
 ## Compiling
 Just run `cargo build`
