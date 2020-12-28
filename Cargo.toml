@@ -1,0 +1,14 @@
+[package]
+name = "maximap"
+version = "0.1.0"
+authors = ["Richard Baumann <ohaz@ohaz.engineer>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+captrs = "0.2.2"
+minifb = "0.19.1"
+tini = "0.4"
+text_io = "0.1.8"
+resize = "0.5.5"
