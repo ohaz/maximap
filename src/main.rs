@@ -79,8 +79,15 @@ fn main() {
     });
     window.limit_update_rate(Some(std::time::Duration::from_micros(16600)));
     
+    let mut error_count = 0;
+
     while window.is_open() && !window.is_key_down(Key::Escape) {
-        let current_screen: Vec<Bgr8> = capturer.capture_frame().unwrap();
+        let current_screen_result = capturer.capture_frame();
+        let current_screen: Vec<Bgr8> = match current_screen_result {
+            Ok(screen) => screen,
+            Err(_) => {if error_count > 3 {panic!("Failed capturing too often")} else {error_count +=1; continue}},
+        };
+        error_count -= 1;
         let (screen_width, _) = capturer.geometry();
         for i in 0..h {
             for j in 0..w {
