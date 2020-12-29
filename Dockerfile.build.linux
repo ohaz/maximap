@@ -1,0 +1,6 @@
+FROM rust:latest
+
+RUN apt update -y && apt install -y \
+    libxkbcommon-dev \
+    libxrandr-dev \ 
+    && rm -rf /var/lib/apt/lists/*

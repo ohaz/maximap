@@ -10,13 +10,24 @@ env:
   CARGO_TERM_COLOR: always
 
 jobs:
-  build:
+  build_windows:
 
     runs-on: windows-latest
 
     steps:
     - uses: actions/checkout@v2
-    - name: Build
+    - name: Build Windows Debug
       run: cargo build --verbose
-    - name: Build Release
+    - name: Build Windows Release
       run: cargo build --release --verbose
+
+  build_linux:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build Linux Debug
+      run: docker build -t rustbuilder -f Dockerfile.build.linux . && docker run --rm --user "$(id -u)":"$(id -g)" -v "$PWD":/usr/src/myapp -w /usr/src/myapp rustbuilder cargo build
+    - name: Build Linux Release
+      run: docker build -t rustbuilder -f Dockerfile.build.linux . && docker run --rm --user "$(id -u)":"$(id -g)" -v "$PWD":/usr/src/myapp -w /usr/src/myapp rustbuilder cargo build --release
