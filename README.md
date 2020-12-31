@@ -1,6 +1,8 @@
 # maximap
 A tool to display the minimap of a game larger on a second screen. Should work on all operating systems supported by `captrs` and `rust_minifb`, so Windows and Linux should work. I have not tested it on Linux yet though.
 
+Attention: This application behaves similar to streaming tools (like OBS). This means it requires quite a bit of CPU resources. On my system (a 6 core @ 3.7Gh) it uses between 4% and 13% of my CPU.
+
 ## Screenshots
 
 The console with the game chooser that is shown when maximap starts:
