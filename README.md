@@ -1,6 +1,14 @@
 # maximap
 A tool to display the minimap of a game larger on a second screen. Should work on all operating systems supported by `captrs` and `rust_minifb`, so Windows and Linux should work. I have not tested it on Linux yet though.
 
+## Screenshots
+
+The console with the game chooser that is shown when maximap starts:
+![Console](https://user-images.githubusercontent.com/1176206/103399783-ee210c00-4b42-11eb-8611-7c3fa581c333.png)
+
+The tool in action (it's not looking that much larger because my second screen has a lower resolution):
+![Starcraft 2 Example](https://user-images.githubusercontent.com/1176206/103399804-0729bd00-4b43-11eb-9ad0-00db17522c4b.png)
+
 ## Compiling
 Just run `cargo build`
 
