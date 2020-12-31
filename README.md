@@ -1,6 +1,8 @@
 # maximap
 A tool to display the minimap of a game larger on a second screen. Should work on all operating systems supported by `captrs` and `rust_minifb`, so Windows and Linux should work. I have not tested it on Linux yet though.
 
+__ONLY USE THIS TOOL AT YOUR OWN RISK.__
+
 Attention: This application behaves similar to streaming tools (like OBS). This means it requires quite a bit of CPU resources. On my system (a 6 core @ 3.7Gh) it uses between 4% and 13% of my CPU.
 
 ## Screenshots
@@ -52,3 +54,11 @@ Example: You open your screenshot, hover with your mouse to the topmost pixel of
 
 After you have created this ini file, you can simply start the application. A console window should appear, listing all games defined in the `config.ini` file, requesting you to choose one. Just enter the number of the game you want to record.
 Afterwards, a new window appears, with the (scaled up) version of the recorded area.
+
+### Isn't this cheating?
+Honestly, I don't know. You might get banned in some games. CSGO for example disallows all third-party applications from interacting with the game in "Trusted Mode". I'm not sure if Maximap works with trusted mode. Apparently, display captures (which Maximap uses) are not an issue, but I can't say for sure.
+
+In general this tool behaves like OBS. So all games that allow streaming should allow this tool too. I don't think it directly interacts with the game in any way, so you _should_ be clear to use it.
+
+Still:
+ONLY USE THIS TOOL AT YOUR OWN RISK.
