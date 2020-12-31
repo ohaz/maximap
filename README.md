@@ -48,6 +48,7 @@ The next sections can define games. You can call them any way you like. Each sec
 * `scale`: The amount to scale the minimap by. Can only be full integers at the moment.
 
 An easy way to figure out the `top`, `bottom`, `left` and `right` values is to start the game, create a screenshot and then look at the screenshot in a tool like Paint, Paint.net or any other image editing tool.
+Example: You open your screenshot, hover with your mouse to the topmost pixel of the minimap and enter it as `top`. Then you hover to the leftmost pixel and enter it as `left`. The same continues for `right` and `bottom`.
 
 After you have created this ini file, you can simply start the application. A console window should appear, listing all games defined in the `config.ini` file, requesting you to choose one. Just enter the number of the game you want to record.
 Afterwards, a new window appears, with the (scaled up) version of the recorded area.
