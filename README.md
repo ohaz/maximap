@@ -1,5 +1,5 @@
 # maximap
-A tool to display the minimap of a game larger on a second screen. Should work on all operating systems supported by `captrs` and `rust_minifb`, so Windows and Linux should work. I have not tested it on Linux yet though. rollcat wrote a mac port: ![macsimap](https://github.com/rollcat/macsimap)
+A tool to display the minimap of a game larger on a second screen. Should work on all operating systems supported by `captrs` and `rust_minifb`, so Windows and Linux should work. I have not tested it on Linux yet though. rollcat wrote a mac port: [macsimap](https://github.com/rollcat/macsimap)
 
 __ONLY USE THIS TOOL AT YOUR OWN RISK.__ (See "Isn't this cheating?" at the bottom of this readme)
 
